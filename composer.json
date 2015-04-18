@@ -1,0 +1,21 @@
+{
+    "name": "maalls/zipcode-bundle",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Malo Yamakado",
+            "email": "maalls@gmail.com"
+        }
+    ],
+    "require": {
+        "maalls/zipcode": "~1.0",
+        "maalls/google-geocoding": "~1.0",
+        "symfony/symfony": "~2.6",
+        "sensio/distribution-bundle": "~3.0,>=3.0.12"
+    },
+    "autoload": {
+        "psr-4": { "Maalls\\ZipcodeBundle\\": "" }
+    }
+    
+}

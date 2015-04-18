@@ -1,0 +1,11 @@
+services:
+#    maalls_zipcode.example:
+#        class: Maalls\ZipcodeBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
+    google_geocoding:
+        class: Maalls\Google\Geocoding\Geocoding 
+        arguments: ["%google.geocoding.key%"]
+
+    maalls.zipcode:
+        class: Maalls\Zipcode\Zipcode
+        arguments: ["@google_geocoding"]

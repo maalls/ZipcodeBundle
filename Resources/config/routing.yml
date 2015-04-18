@@ -1,0 +1,3 @@
+maalls_zipcode:
+    path:     /zipcode/{country}/{zipcode}
+    defaults: { _controller: MaallsZipcodeBundle:Default:zipcode }
